@@ -1,0 +1,6 @@
+dataset,column,dtype,semantic_family,semantic_subtype,n_unique,pct_missing,pct_unique,sample_values,min,max
+gx_programada_fuente,fecha,datetime64[us],categorical,nominal,3718,0.0,100.0,"2016-01-12, 2016-01-13, 2016-01-14",,
+gx_programada_fuente,hidro,float64,numerical,continuous,3699,0.0,99.489,"74055.0, 66608.0, 70276.0",0.0,102998.933495606
+gx_programada_fuente,termo,float64,numerical,continuous,3701,0.0,99.543,"69960.0, 76598.0, 71616.0",0.0,164211.2649
+gx_programada_fuente,ernc,float64,numerical,continuous,3701,0.0,99.543,"16709.0, 15589.0, 17317.0",0.0,151132.82721724
+gx_programada_fuente,total,float64,numerical,continuous,3698,0.0,99.462,"160724.0, 158795.0, 159209.0",0.0,262231.551649975

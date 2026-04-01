@@ -1,0 +1,6 @@
+dataset,column,semantic_family,semantic_subtype,shannon_entropy_bits
+gx_programada_fuente,fecha,categorical,nominal,11.860311054919482
+gx_programada_fuente,hidro,numerical,continuous,3.321927259516002
+gx_programada_fuente,termo,numerical,continuous,3.321927259516002
+gx_programada_fuente,ernc,numerical,continuous,3.321927259516002
+gx_programada_fuente,total,numerical,continuous,3.321927259516002

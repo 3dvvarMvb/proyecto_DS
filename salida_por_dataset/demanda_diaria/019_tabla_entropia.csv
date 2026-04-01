@@ -1,0 +1,5 @@
+dataset,column,semantic_family,semantic_subtype,shannon_entropy_bits
+demanda_diaria,fecha,categorical,nominal,12.773197692143782
+demanda_diaria,dmin_mw,numerical,continuous,3.321928047561315
+demanda_diaria,dmax_mw,numerical,continuous,3.321928047561315
+demanda_diaria,sistema,categorical,nominal,1.563849585438022

@@ -1,0 +1,5 @@
+target,predictor,risk_level,reason
+demanda_max_mw,cap_instalada_mw,Medio,Correlacion muy alta con target (r=0.971)
+demanda_max_mw,demanda_capacidad,Medio,Posible variable derivada/agregada por nombre
+demanda_max_mw,anio,Bajo,Sin evidencia fuerte de leakage directo
+demanda_max_mw,sistema,Bajo,Sin evidencia fuerte de leakage directo

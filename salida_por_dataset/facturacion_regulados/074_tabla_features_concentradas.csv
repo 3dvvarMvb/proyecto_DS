@@ -1,0 +1,11 @@
+column,top1_frequency,near_zero_variance
+e2_kwh,0.9382,False
+tipo_clientes,0.8894,False
+region,0.1511,False
+clientes_facturados,0.1106,False
+anio,0.1048,False
+mes,0.0836,False
+tarifa,0.0803,False
+energia_kwh,0.0271,False
+e1_kwh,0.0244,False
+comuna,0.0042,False

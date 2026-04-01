@@ -1,0 +1,7 @@
+target,predictor,risk_level,reason
+generacion_mwh,anio,Bajo,Sin evidencia fuerte de leakage directo
+generacion_mwh,cltes_libres_mwh,Bajo,Sin evidencia fuerte de leakage directo
+generacion_mwh,cltes_regulados_mwh,Bajo,Sin evidencia fuerte de leakage directo
+generacion_mwh,mes,Bajo,Sin evidencia fuerte de leakage directo
+generacion_mwh,region_cod,Bajo,Sin evidencia fuerte de leakage directo
+generacion_mwh,region_nombre,Bajo,Sin evidencia fuerte de leakage directo

@@ -1,0 +1,6 @@
+column,missing_pct,max_missing_assoc_spearman,pattern_inference
+anio,4.167,0.0,MCAR probable
+sistema,4.167,0.0,MCAR probable
+cap_instalada_mw,4.167,0.0,MCAR probable
+demanda_max_mw,4.167,0.0,MCAR probable
+demanda_capacidad,4.167,0.0,MCAR probable

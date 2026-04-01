@@ -1,0 +1,7 @@
+column,robust_jitter_rate,median_step,mad_step,noise_flag
+cltes_libres_mwh,0.2507,-9990.291,66537.7313,Alta
+cltes_regulados_mwh,0.1253,9015.746,74165.565,Alta
+region_cod,0.1044,1.0,1.0,Alta
+generacion_mwh,0.0627,26581.3481,261526.3516,Alta
+mes,0.0601,0.0,0.0,Alta
+anio,0.0026,0.0,0.0,Baja

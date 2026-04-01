@@ -1,0 +1,8 @@
+column,top1_frequency,near_zero_variance
+anio,0.5,False
+cltes_libres_mwh,0.1875,False
+mes,0.0833,False
+region_nombre,0.0625,False
+region_cod,0.0625,False
+cltes_regulados_mwh,0.0625,False
+generacion_mwh,0.0026,False

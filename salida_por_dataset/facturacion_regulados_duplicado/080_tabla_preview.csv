@@ -1,0 +1,4 @@
+anio,mes,region,comuna,tipo_clientes,tarifa,clientes_facturados,e1_kwh,e2_kwh,energia_kwh
+2015,1,Región del Libertador Gral. Bernardo O’Higgins,Las Cabras,No Residencial,BT2PP,179.0,108809.0,0.0,108809
+2015,1,Región del Libertador Gral. Bernardo O’Higgins,Las Cabras,No Residencial,AT4.3,128.0,3241469.0,0.0,3241469
+2015,1,Región del Libertador Gral. Bernardo O’Higgins,Las Cabras,No Residencial,AT4.2,14.0,257092.0,0.0,257092

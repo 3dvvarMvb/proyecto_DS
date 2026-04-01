@@ -1,0 +1,6 @@
+column,rule,n_violations,pct_violations,examples
+mes,(x >= 1) & (x <= 12),0,0.0,
+anio,(x >= 1990) & (x <= 2035),0,0.0,
+cltes_libres_mwh,x >= 0,0,0.0,
+cltes_regulados_mwh,x >= 0,0,0.0,
+generacion_mwh,x >= 0,0,0.0,

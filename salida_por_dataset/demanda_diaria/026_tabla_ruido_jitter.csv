@@ -1,0 +1,3 @@
+column,robust_jitter_rate,median_step,mad_step,noise_flag
+dmin_mw,0.0,13.23,2286.755,Baja
+dmax_mw,0.0,-13.815,3761.18,Baja

@@ -1,0 +1,7 @@
+column,robust_jitter_rate,median_step,mad_step,noise_flag
+energia_kwh,0.2601,0.0,62414.0,Alta
+e1_kwh,0.2595,0.0,62807.0,Alta
+clientes_facturados,0.2349,0.0,20.0,Alta
+e2_kwh,0.1037,0.0,0.0,Alta
+mes,0.0002,0.0,0.0,Baja
+anio,0.0,0.0,0.0,Baja

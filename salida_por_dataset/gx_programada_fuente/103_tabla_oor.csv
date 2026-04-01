@@ -1,0 +1,6 @@
+column,rule,n_violations,pct_violations,examples
+fecha,x.notna(),0,0.0,
+ernc,x >= 0,0,0.0,
+hidro,x >= 0,0,0.0,
+termo,x >= 0,0,0.0,
+total,x >= 0,0,0.0,

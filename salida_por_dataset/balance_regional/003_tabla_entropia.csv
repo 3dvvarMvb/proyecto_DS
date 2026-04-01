@@ -1,0 +1,8 @@
+dataset,column,semantic_family,semantic_subtype,shannon_entropy_bits
+balance_regional,region_nombre,categorical,nominal,4.0
+balance_regional,generacion_mwh,numerical,continuous,3.32181088820124
+balance_regional,mes,numerical,discrete,3.2516291673878235
+balance_regional,cltes_regulados_mwh,numerical,continuous,3.25
+balance_regional,region_cod,numerical,discrete,3.25
+balance_regional,cltes_libres_mwh,numerical,continuous,3.1213144517766986
+balance_regional,anio,numerical,discrete,1.0

@@ -1,0 +1,8 @@
+dataset,rows,cols,target_inferido,missing_total_pct,n_oor_rules,n_high_corr_pairs,n_high_leakage_flags
+balance_regional,384,7,generacion_mwh,0.0,0,0,0
+demanda_diaria,11711,4,dmax_mw,0.0,0,1,1
+demanda_max_capacidad,24,5,demanda_max_mw,4.167,0,1,0
+dx_programada,3718,2,valor,0.0,0,0,0
+facturacion_regulados,490758,10,energia_kwh,1.0,4,1,2
+facturacion_regulados_duplicado,490758,10,energia_kwh,1.0,4,1,2
+gx_programada_fuente,3718,5,total,0.0,0,0,0

@@ -1,0 +1,8 @@
+dataset,column,dtype,semantic_family,semantic_subtype,n_unique,pct_missing,pct_unique,sample_values,min,max
+balance_regional,anio,int64,numerical,discrete,2,0.0,0.521,"2019, 2019, 2019",2019.0,2020.0
+balance_regional,mes,int64,numerical,discrete,12,0.0,3.125,"1, 1, 1",1.0,12.0
+balance_regional,region_nombre,str,categorical,nominal,16,0.0,4.167,"Región del Biobío, Región de Antofagasta, Región de Tarapacá",,
+balance_regional,region_cod,int64,numerical,discrete,16,0.0,4.167,"8, 2, 1",1.0,16.0
+balance_regional,generacion_mwh,float64,numerical,continuous,384,0.0,100.0,"1334489.497, 1552684.673, 75208.623",3444.7034,2066807.171
+balance_regional,cltes_libres_mwh,float64,numerical,continuous,313,0.0,81.51,"255904.6, 1281828.9, 154142.2",0.0,1516127.153
+balance_regional,cltes_regulados_mwh,float64,numerical,continuous,16,0.0,4.167,"164261.477, 74124.2, 36443.959",11142.32,988222.667
