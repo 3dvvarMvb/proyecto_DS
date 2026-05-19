@@ -1,6 +1,0 @@
-dataset,column,dtype,semantic_family,semantic_subtype,n_unique,pct_missing,pct_unique,sample_values,min,max
-demanda_max_capacidad,anio,float64,numerical,discrete,15,4.167,65.217,"2009.0, 2009.0, 2010.0",2009.0,2023.0
-demanda_max_capacidad,sistema,str,categorical,nominal,3,4.167,13.043,"SIC, SING, SIC",,
-demanda_max_capacidad,cap_instalada_mw,float64,numerical,continuous,23,4.167,100.0,"11.404, 3.699, 12.147",3.699,34.276
-demanda_max_capacidad,demanda_max_mw,float64,numerical,continuous,23,4.167,100.0,"6.139, 1.816, 6.482",1.816,11.917
-demanda_max_capacidad,demanda_capacidad,float64,numerical,continuous,15,4.167,65.217,"0.54, 0.49, 0.53",0.34,0.55

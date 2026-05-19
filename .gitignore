@@ -1,1 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+
+# Virtual environments
 .venv/
+venv/
+
+# Generated data (reproducible by running the pipeline)
+data/interim/
+data/processed/
+
+# Generated metadata
+reports/model_selection_meta.json
+
+# Local tool configuration
+.claude/
+.mcp.json
+CLAUDE.md
+.kb
+
+# macOS
+.DS_Store

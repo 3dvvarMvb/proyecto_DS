@@ -1,4 +1,0 @@
-column,rule,n_violations,pct_violations,examples
-fecha,x.notna(),0,0.0,
-dmax_mw,x >= 0,0,0.0,
-dmin_mw,x >= 0,0,0.0,

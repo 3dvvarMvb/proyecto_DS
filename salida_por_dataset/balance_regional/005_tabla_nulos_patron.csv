@@ -1,8 +1,0 @@
-column,missing_pct,max_missing_assoc_spearman,pattern_inference
-anio,0.0,0.0,Sin nulos
-mes,0.0,0.0,Sin nulos
-region_nombre,0.0,0.0,Sin nulos
-region_cod,0.0,0.0,Sin nulos
-generacion_mwh,0.0,0.0,Sin nulos
-cltes_libres_mwh,0.0,0.0,Sin nulos
-cltes_regulados_mwh,0.0,0.0,Sin nulos

@@ -1,3 +1,0 @@
-dataset,column,dtype,semantic_family,semantic_subtype,n_unique,pct_missing,pct_unique,sample_values,min,max
-dx_programada,fecha,datetime64[us],categorical,nominal,3718,0.0,100.0,"2016-01-12, 2016-01-13, 2016-01-14",,
-dx_programada,valor,float64,numerical,continuous,3520,0.0,94.675,"7354.0, 7354.0, 7354.0",0.0,13412.305537993

@@ -1,5 +1,0 @@
-column,robust_jitter_rate,median_step,mad_step,noise_flag
-anio,0.3636,1.0,0.0,Alta
-cap_instalada_mw,0.0,1.078,8.9955,Baja
-demanda_max_mw,0.0,0.215,4.926,Baja
-demanda_capacidad,0.0,-0.015,0.045,Baja

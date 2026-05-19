@@ -1,6 +1,0 @@
-dataset,column,semantic_family,semantic_subtype,shannon_entropy_bits
-demanda_max_capacidad,cap_instalada_mw,numerical,continuous,3.294663586209604
-demanda_max_capacidad,demanda_max_mw,numerical,continuous,3.294663586209604
-demanda_max_capacidad,anio,numerical,discrete,3.2733494559629492
-demanda_max_capacidad,demanda_capacidad,numerical,continuous,3.0666152167384504
-demanda_max_capacidad,sistema,categorical,nominal,1.5821930667351334

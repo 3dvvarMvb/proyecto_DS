@@ -1,5 +1,0 @@
-dataset,column,dtype,semantic_family,semantic_subtype,n_unique,pct_missing,pct_unique,sample_values,min,max
-demanda_diaria,fecha,datetime64[us],categorical,nominal,7364,0.0,62.881,"2006-01-01, 2006-01-01, 2006-01-02",,
-demanda_diaria,sistema,str,categorical,nominal,3,0.0,0.026,"SIC, SING, SIC",,
-demanda_diaria,dmin_mw,float64,numerical,continuous,11542,0.0,98.557,"2644.2, 1379.91, 3078.2",0.12,9700.18
-demanda_diaria,dmax_mw,float64,numerical,continuous,11536,0.0,98.506,"4221.86, 1547.89, 5233.15",319.81,13213.84

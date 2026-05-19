@@ -1,6 +1,0 @@
-column,rule,n_violations,pct_violations,examples
-anio,(x >= 1990) & (x <= 2035),0,0.0,
-cap_instalada_mw,x >= 0,0,0.0,
-demanda_capacidad,x >= 0,0,0.0,
-demanda_max_mw,x >= 0,0,0.0,
-demanda_capacidad,(x >= 0) & (x <= 2),0,0.0,
