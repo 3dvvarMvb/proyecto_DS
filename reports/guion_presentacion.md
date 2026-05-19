@@ -21,7 +21,7 @@ Todos los valores numéricos citados provienen de los reportes en `reports/`.
   - Sector estratégico: planificación, tarifas, integración de ERNC.
   - Datos públicos abiertos a nivel comunal y de sistema (SEN).
   - Aplicaciones: planificación de infraestructura, detección de anomalías, soporte a políticas tarifarias.
-- **Gráfico:** [`reports/figures_v2/01_evolucion_mensual_nacional.png`](figures_v2/01_evolucion_mensual_nacional.png)
+- **Gráfico:** [`reports/Imagenes/01_evolucion_mensual_nacional.png`](Imagenes/01_evolucion_mensual_nacional.png)
 - **Nota del expositor:** "La energía facturada es un proxy del consumo real; sus variaciones reflejan crecimiento, estacionalidad moderada y eventos específicos."
 
 ---
@@ -92,7 +92,7 @@ Todos los valores numéricos citados provienen de los reportes en `reports/`.
   - **Tratamiento aplicado**: imputación en pipeline; **vista filtrada** `energia>0 & cf>0` se aplica **sólo dentro del modelo**, sin tocar `clean`.
   - Auxiliares: 18 columnas lag (L1/L2/L3), **sin variables del mismo mes** (no hay leakage temporal).
   - **Aclaración importante**: los **ceros del target** son del dataset original; los **nulos en `_L1/_L2/_L3`** vienen del diseño temporal de los lags. Son fenómenos **distintos**.
-- **Gráfico:** [`reports/figures_v2/06_anomalias_por_anio.png`](figures_v2/06_anomalias_por_anio.png)
+- **Gráfico:** [`reports/Imagenes/06_anomalias_por_anio.png`](Imagenes/06_anomalias_por_anio.png)
 - **Nota del expositor:** "Mantenemos `clean` intacto y trazable; las decisiones quedan en `reports/calidad_target_energia.md`."
 
 ---
@@ -105,7 +105,7 @@ Todos los valores numéricos citados provienen de los reportes en `reports/`.
   - **Top regiones acumuladas (TWh)**: RM 124.6 >> Valparaíso 27.8 > Biobío 20.4 > Maule 16.5 > O'Higgins 15.1. Antofagasta está en posición 9 (8.3 TWh) — no entre las líderes.
   - **Estacionalidad**: máximo agregado nacional en julio, mínimo en noviembre; amplitud ≈ 23 %. Moderada a nivel nacional.
   - **Distribución del target**: muy sesgada (cola larga).
-- **Gráfico recomendado:** [`reports/figures_v2/02_evolucion_tipo_cliente.png`](figures_v2/02_evolucion_tipo_cliente.png) y [`reports/figures_v2/03_energia_por_region.png`](figures_v2/03_energia_por_region.png).
+- **Gráfico recomendado:** [`reports/Imagenes/02_evolucion_tipo_cliente.png`](Imagenes/02_evolucion_tipo_cliente.png) y [`reports/Imagenes/03_energia_por_region.png`](Imagenes/03_energia_por_region.png).
 - **Nota del expositor:** "Hay heterogeneidad fuerte entre comunas/tipos. Esto justifica modelar a nivel panel y no agregar al país."
 
 ---
@@ -125,7 +125,7 @@ Todos los valores numéricos citados provienen de los reportes en `reports/`.
 
   - Pearson en **log-log** (`log1p(energia)` vs `log1p(cf)`) = **0.818**, Spearman log = 0.874.
   - **Advertencia metodológica**: el heatmap **no captura** el efecto de variables categóricas (`region`, `comuna`, `tarifa`, `tipo_clientes`). Ese efecto se mide indirectamente en el modelo vía OneHotEncoder.
-- **Gráfico:** [`reports/figures_v2/13_matriz_correlacion_numerica.png`](figures_v2/13_matriz_correlacion_numerica.png) y [`reports/figures_v2/14_matriz_correlacion_log.png`](figures_v2/14_matriz_correlacion_log.png).
+- **Gráfico:** [`reports/Imagenes/13_matriz_correlacion_numerica.png`](Imagenes/13_matriz_correlacion_numerica.png) y [`reports/Imagenes/14_matriz_correlacion_log.png`](Imagenes/14_matriz_correlacion_log.png).
 - **Nota del expositor:** "La única correlación lineal alta entre numéricas es `clientes_facturados` con `energia_kwh` (0.89). Año y mes no aportan linealmente, pero el modelo de árboles captura la estacionalidad de forma no lineal."
 
 ---
@@ -167,7 +167,7 @@ Todos los valores numéricos citados provienen de los reportes en `reports/`.
 - **Notas en la slide**:
   - ExtraTrees y RandomForest están en **empate técnico** (|ΔR²| < 0.001). Desempate por **menor MAE** → ganador **RandomForest**.
   - **KNN** entrenado sobre submuestra de 50 000 filas del train para evitar O(n²) con OHE de alta cardinalidad; comparación es informativa, no estrictamente justa.
-- **Gráfico:** [`reports/figures_v2/08_comparacion_r2_modelos.png`](figures_v2/08_comparacion_r2_modelos.png) y [`reports/figures_v2/09_comparacion_rmse_modelos.png`](figures_v2/09_comparacion_rmse_modelos.png).
+- **Gráfico:** [`reports/Imagenes/08_comparacion_r2_modelos.png`](Imagenes/08_comparacion_r2_modelos.png) y [`reports/Imagenes/09_comparacion_rmse_modelos.png`](Imagenes/09_comparacion_rmse_modelos.png).
 - **Nota del expositor:** "Probamos siete modelos. Los lineales se quedan cortos (R² ≈ 0.89). Los árboles llegan a R² ≈ 0.97. Elegimos RandomForest porque empata en R² con ExtraTrees pero gana claramente en MAE y MAPE."
 
 ---
@@ -187,7 +187,7 @@ Todos los valores numéricos citados provienen de los reportes en `reports/`.
   - Diferencia A vs B: **ΔR² ≈ +0.17** atribuible a `clientes_facturados`.
   - C ≈ A (mejora marginal +0.0005 al filtrar ceros/negativos).
   - **D no ayuda**: los auxiliares son agregados SEN nacionales, idénticos para todas las filas del mismo mes → sin varianza intra-mes.
-- **Gráfico:** [`reports/figures_v2/11_prediccion_vs_real.png`](figures_v2/11_prediccion_vs_real.png) y [`reports/figures_v2/12_residuos_modelo.png`](figures_v2/12_residuos_modelo.png).
+- **Gráfico:** [`reports/Imagenes/11_prediccion_vs_real.png`](Imagenes/11_prediccion_vs_real.png) y [`reports/Imagenes/12_residuos_modelo.png`](Imagenes/12_residuos_modelo.png).
 - **Nota del expositor:** "El R² alto del escenario A está dominado por `clientes_facturados`. La pregunta interesante es B/C, donde se mide el aporte real del modelo."
 
 ---
@@ -208,7 +208,7 @@ Todos los valores numéricos citados provienen de los reportes en `reports/`.
   - Temporal **estricto**: no. `cf` se conoce al facturar el mismo mes, no usa información futura.
   - Práctico de **utilidad**: sí es problemático para predicción futura real. Conviene usar `clientes_facturados_L1`.
 
-- **Gráfico:** [`reports/figures_v2/15_clientes_vs_energia_loglog.png`](figures_v2/15_clientes_vs_energia_loglog.png).
+- **Gráfico:** [`reports/Imagenes/15_clientes_vs_energia_loglog.png`](Imagenes/15_clientes_vs_energia_loglog.png).
 - **Nota del expositor:** "`clientes_facturados` es la variable estrella. No es leakage temporal, pero es casi contemporánea con el target — el R² alto se apoya en una identidad estructural. En la siguiente entrega usaremos su lag para una evaluación predictiva más honesta."
 
 ---
@@ -233,7 +233,7 @@ Todos los valores numéricos citados provienen de los reportes en `reports/`.
     | tarifa_BT3PP | 0.002 |
 
   - Después de `clientes_facturados`, las features importantes son tarifas industriales (AT4.3, BT4.3), grandes comunas (Santiago, Las Condes) y `mes` (estacionalidad).
-- **Gráfico:** [`reports/figures_v2/16_importancia_variables.png`](figures_v2/16_importancia_variables.png).
+- **Gráfico:** [`reports/Imagenes/16_importancia_variables.png`](Imagenes/16_importancia_variables.png).
 - **Nota del expositor:** "La importancia confirma lo que sospechábamos: la geografía y la tarifa importan, pero el motor del modelo es el número de clientes facturados. Esto define la agenda de la entrega 2: features que aporten señal independiente."
 
 ---
@@ -275,11 +275,11 @@ Todos los valores numéricos citados provienen de los reportes en `reports/`.
 
 ## Apéndice (slides opcionales)
 
-- **A1 — Calidad del target**: [`reports/figures_v2/06_anomalias_por_anio.png`](figures_v2/06_anomalias_por_anio.png).
-- **A2 — Distribución log**: [`reports/figures_v2/04_distribucion_log_energia.png`](figures_v2/04_distribucion_log_energia.png).
-- **A3 — Boxplot por tipo cliente**: [`reports/figures_v2/05_boxplot_tipo_cliente.png`](figures_v2/05_boxplot_tipo_cliente.png).
-- **A4 — Energía vs demanda SEN L1**: [`reports/figures_v2/07_energia_vs_demanda_sen_lag1.png`](figures_v2/07_energia_vs_demanda_sen_lag1.png) con disclaimer (serie nacional, no comunal).
-- **A5 — Heatmap extendido con auxiliares**: [`reports/figures_v2/13b_corr_heatmap_aux.png`](figures_v2/13b_corr_heatmap_aux.png).
+- **A1 — Calidad del target**: [`reports/Imagenes/06_anomalias_por_anio.png`](Imagenes/06_anomalias_por_anio.png).
+- **A2 — Distribución log**: [`reports/Imagenes/04_distribucion_log_energia.png`](Imagenes/04_distribucion_log_energia.png).
+- **A3 — Boxplot por tipo cliente**: [`reports/Imagenes/05_boxplot_tipo_cliente.png`](Imagenes/05_boxplot_tipo_cliente.png).
+- **A4 — Energía vs demanda SEN L1**: [`reports/Imagenes/07_energia_vs_demanda_sen_lag1.png`](Imagenes/07_energia_vs_demanda_sen_lag1.png) con disclaimer (serie nacional, no comunal).
+- **A5 — Heatmap extendido con auxiliares**: [`reports/Imagenes/13b_corr_heatmap_aux.png`](Imagenes/13b_corr_heatmap_aux.png).
 - **A6 — Notebook reproducible**: [`notebooks/analisis_reproducible.ipynb`](../notebooks/analisis_reproducible.ipynb).
 
 ---

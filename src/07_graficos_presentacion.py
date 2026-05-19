@@ -6,7 +6,7 @@ Inputs:
   - data/processed/modeling_con_auxiliares.parquet
 
 Outputs:
-  - reports/figures_v2/*.png
+  - reports/Imagenes/*.png
   - reports/resumen_analisis_exploratorio.md
 
 Unidades: kWh/1e6 = GWh; kWh/1e9 = TWh. No modifica datasets.
@@ -26,7 +26,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 INTERIM = ROOT / "data" / "interim" / "facturacion_clean.parquet"
 AUX = ROOT / "data" / "processed" / "modeling_con_auxiliares.parquet"
-FIG_DIR = ROOT / "reports" / "figures_v2"
+FIG_DIR = ROOT / "reports" / "Imagenes"
 SUMMARY = ROOT / "reports" / "resumen_analisis_exploratorio.md"
 
 FIG_DIR.mkdir(parents=True, exist_ok=True)
@@ -204,7 +204,7 @@ def main() -> int:
     lines.append(f"- Nulos en otras columnas: e1_kwh={nan_e1:,}, e2_kwh={nan_e2:,}, consumo_promedio_cliente_kwh={nan_cprom:,}.\n".replace(",", " "))
     lines.append("\n## Figuras generadas\n\n")
     for fname, caption in figures:
-        lines.append(f"- `reports/figures_v2/{fname}` — {caption}\n")
+        lines.append(f"- `reports/Imagenes/{fname}` — {caption}\n")
     lines.append("\n## Notas metodológicas\n\n")
     lines.append("- Las variables auxiliares (demanda SEN, generación) son **series nacionales**, idénticas para todas las filas de un mismo mes; su capacidad de discriminar a nivel comuna×tarifa es limitada.\n")
     lines.append("- Los outliers extremos no se removieron en `clean`; las decisiones de filtrado se aplican en el script de modelado (vista `energia_kwh > 0` y/o `clientes_facturados > 0`).\n")

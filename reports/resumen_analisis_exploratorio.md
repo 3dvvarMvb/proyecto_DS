@@ -44,13 +44,13 @@
 
 ## Figuras generadas
 
-- `reports/figures_v2/01_evolucion_mensual_nacional.png` — Evolución mensual de energía total facturada (GWh).
-- `reports/figures_v2/02_evolucion_tipo_cliente.png` — Evolución mensual por tipo_clientes. La curva Residencial supera a No Residencial alrededor de 2018-2019.
-- `reports/figures_v2/03_energia_por_region.png` — Energía acumulada por región (TWh = kWh/1e9). RM domina con margen amplio.
-- `reports/figures_v2/04_distribucion_log_energia.png` — Distribución log10 de `energia_kwh` (positivos). Cola larga: el target requiere log o tratamiento específico.
-- `reports/figures_v2/05_boxplot_tipo_cliente.png` — Boxplot log10 del target por tipo de cliente. No Residencial tiene mayor dispersión y outliers superiores.
-- `reports/figures_v2/06_anomalias_por_anio.png` — Negativos y ceros de `energia_kwh` por año. Negativos crecen sostenidamente (80 → 199 entre 2015 y 2024).
-- `reports/figures_v2/07_energia_vs_demanda_sen_lag1.png` — Energía facturada (suma mensual) vs demanda SEN promedio con lag 1. **La demanda SEN es serie nacional** (igual para todas las filas del mismo mes), por eso su uso como feature por-fila tiene varianza limitada.
+- `reports/Imagenes/01_evolucion_mensual_nacional.png` — Evolución mensual de energía total facturada (GWh).
+- `reports/Imagenes/02_evolucion_tipo_cliente.png` — Evolución mensual por tipo_clientes. La curva Residencial supera a No Residencial alrededor de 2018-2019.
+- `reports/Imagenes/03_energia_por_region.png` — Energía acumulada por región (TWh = kWh/1e9). RM domina con margen amplio.
+- `reports/Imagenes/04_distribucion_log_energia.png` — Distribución log10 de `energia_kwh` (positivos). Cola larga: el target requiere log o tratamiento específico.
+- `reports/Imagenes/05_boxplot_tipo_cliente.png` — Boxplot log10 del target por tipo de cliente. No Residencial tiene mayor dispersión y outliers superiores.
+- `reports/Imagenes/06_anomalias_por_anio.png` — Negativos y ceros de `energia_kwh` por año. Negativos crecen sostenidamente (80 → 199 entre 2015 y 2024).
+- `reports/Imagenes/07_energia_vs_demanda_sen_lag1.png` — Energía facturada (suma mensual) vs demanda SEN promedio con lag 1. **La demanda SEN es serie nacional** (igual para todas las filas del mismo mes), por eso su uso como feature por-fila tiene varianza limitada.
 
 ## Notas metodológicas
 

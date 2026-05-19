@@ -4,7 +4,7 @@ Selección de modelo + heatmaps de correlación + análisis de variable dominant
 Lee `data/interim/facturacion_clean.parquet` (sin modificarlo) y produce:
 
   - Tabla comparativa de 7 modelos de regresión (MAE, MSE, RMSE, R², MAPE).
-  - Figuras 08-16 en `reports/figures_v2/`.
+  - Figuras 08-16 en `reports/Imagenes/`.
   - Reporte `reports/seleccion_modelo_y_correlacion.md`.
 
 Vista de modelado (sólo dentro del pipeline, no toca el parquet):
@@ -60,7 +60,7 @@ from sklearn.tree import DecisionTreeRegressor
 ROOT = Path(__file__).resolve().parents[1]
 BASE_PATH = ROOT / "data" / "interim" / "facturacion_clean.parquet"
 AUX_PATH = ROOT / "data" / "processed" / "modeling_con_auxiliares.parquet"
-FIGDIR = ROOT / "reports" / "figures_v2"
+FIGDIR = ROOT / "reports" / "Imagenes"
 REPORT = ROOT / "reports" / "seleccion_modelo_y_correlacion.md"
 
 TARGET = "energia_kwh"

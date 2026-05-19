@@ -40,7 +40,7 @@ proyecto_DS/
     ├── resumen_analisis_exploratorio.md
     ├── resumen_modelo_energia.md
     ├── guion_presentacion.md
-    └── figures_v2/            # 17 figuras generadas por los scripts
+    └── Imagenes/            # 17 figuras generadas por los scripts
 ```
 
 ## Reproducción del pipeline
@@ -54,9 +54,9 @@ python src/03_analisis_exploratorio.py           # EDA básico
 python src/04_preparar_datasets_modelado.py      # → data/processed/modeling_*.parquet
 python src/05_integrar_auxiliares.py             # → data/processed/modeling_con_auxiliares.parquet
 python src/06_auditoria_datos.py                 # → reports/auditoria_datos.md
-python src/07_graficos_presentacion.py           # → reports/figures_v2/ (01–07)
+python src/07_graficos_presentacion.py           # → reports/Imagenes/ (01–07)
 python src/08_modelo_energia.py                  # → reports/resumen_modelo_energia.md
-python src/09_seleccion_modelo_correlacion.py    # → reports/figures_v2/ (08–16)
+python src/09_seleccion_modelo_correlacion.py    # → reports/Imagenes/ (08–16)
 ```
 
 El notebook `notebooks/analisis_reproducible.ipynb` replica las conclusiones principales de la Presentación 1 en un único archivo ejecutable.

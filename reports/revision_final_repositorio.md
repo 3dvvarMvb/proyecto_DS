@@ -38,7 +38,7 @@ Fecha de revisión: 2026-05-19. Rama: `ElectricidadV2`. Commit base: `3acb721`.
 | `presentation1_model_summary_v2.md` | `resumen_modelo_energia.md` |
 | `presentation1_outline_v3.md` | `guion_presentacion.md` |
 
-### Figuras (`reports/figures_v2/`)
+### Figuras (`reports/Imagenes/`)
 
 | Nombre anterior | Nombre actual |
 |---|---|
@@ -138,7 +138,7 @@ proyecto_DS/
 │   ├── resumen_analisis_exploratorio.md
 │   ├── resumen_modelo_energia.md
 │   ├── seleccion_modelo_y_correlacion.md
-│   └── figures_v2/             (17 figuras)
+│   └── Imagenes/             (17 figuras)
 └── src/
     ├── 01_inventario_datasets.py
     ├── 02_limpieza_facturacion.py
